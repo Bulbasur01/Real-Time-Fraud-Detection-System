@@ -10,9 +10,9 @@ The system processes each transaction event and maintains a user transaction his
 - Ping-pong activity: Detects sequences of transactions bouncing back and forth between two services within 10 minutes.
 
 ## Implementation Details
-- **FraudDetectionSystem.java**: Contains the main implementation of the fraud detection system.
+- **FraudDetectionSystemApplication.java**: Contains the main implementation of the fraud detection system.
 - **TransactionEvent**: Represents a single transaction event with timestamp, amount, user ID, and service ID.
-- **UserTransactionHistory**: Maintains the transaction history for each user and provides methods to check for fraudulent patterns.
+- **ProcessUserTransactionHistory**: Maintains the transaction history for each user and provides methods to check for fraudulent patterns.
 - The system is written in Java and does not rely on external libraries for anomaly detection.
 - Out-of-order event processing is handled by processing events in real-time and maintaining appropriate windowing mechanisms to accommodate network latencies in a distributed system.
 
@@ -26,5 +26,6 @@ The input test dataset represents a stream of transaction events. Each event con
 
 ## Expected Results
 Based on the provided test dataset, the system should generate alerts for:
-- User1: Conducting transactions in more than 3 distinct services within a 5-minute window.
-- User2 and User3: Transactions significantly higher than typical amounts.
+- User1: Conducting transactions in more than 3 distinct services within a 5-minute window. Also, user1 has transactions significantly higher than typical amounts and involved in ping-pong activity within 10 minutes.
+- User2 and User3: Transactions significantly higher than typical amounts. Both user2 and user3 are also involved in ping-pong activity within 10 minutes.
+- User4: Transactions significantly higher than typical amounts.
