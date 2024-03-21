@@ -17,9 +17,10 @@ The system processes each transaction event and maintains a user transaction his
 - Out-of-order event processing is handled by processing events in real-time and maintaining appropriate windowing mechanisms to accommodate network latencies in a distributed system.
 
 ## How to Run
-1. Compile the FraudDetectionSystem.java file.
-2. Run the compiled class file.
-3. The system will process the test dataset provided in the main method and generate alerts for any fraudulent patterns detected.
+1. Pull code from the repository.
+2. Compile the FraudDetectionSystem.java file.
+3. Run the compiled class file.
+4. The system will process the test dataset provided in the resource folder and generate alerts for any fraudulent patterns detected.
 
 ## Test Dataset
 The input test dataset represents a stream of transaction events. Each event contains a timestamp, transaction amount, user ID, and service ID. See the provided example in the code comments.
