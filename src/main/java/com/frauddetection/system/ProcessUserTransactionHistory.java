@@ -1,4 +1,4 @@
-package com.fraud.frauddetectionsystem;
+package com.frauddetection.system;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

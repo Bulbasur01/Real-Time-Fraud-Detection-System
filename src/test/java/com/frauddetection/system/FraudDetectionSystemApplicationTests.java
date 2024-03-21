@@ -1,4 +1,4 @@
-package com.fraud.frauddetectionsystem;
+package com.frauddetection.system;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,4 +1,4 @@
-package com.fraud.frauddetectionsystem;
+package com.frauddetection.system;
 
 
 import java.util.Map;
